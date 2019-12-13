@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 
 import static spark.Spark.post;
 
-public class SparkjavaRequestpart {
+public class SparkjavaMultipartFile {
     public static void main(String[] args) {
         post("/upload", (request, response) -> {
             request.attribute("org.eclipse.jetty.multipartConfig", new MultipartConfigElement("/temp"));
